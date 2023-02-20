@@ -15,7 +15,7 @@ html{
 /* SECCION INICIO */
 .inicio{
     background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
-    url("Images/fondo13.jpg");
+    url("../Images/fondo13.jpg");
     background-size: cover;
     background-position: center center;
     color: #fff;
@@ -123,6 +123,24 @@ html{
     font-family: "Yellowtail";
     font-size: 1.5rem;
 }
+.titulo-seccion-h3ocupada{
+    text-transform: uppercase;
+    font-size: 30px;
+    padding: 10px 0 10px 0;
+}
+.titulo-seccion-h1libre{
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 10px 0 60px 0;
+}
+.titulo-seccion-h3libre{
+    text-transform: uppercase;
+    font-size: 30px;
+    padding: 10px 0 120px 0;
+}
+
+
+
 /* SECCION SOBRE MI */
 .sobremi{
     background-color: #e6e6e6;
@@ -175,7 +193,7 @@ html{
     padding: 80px 0 100px 0;
     text-align: center;
     background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
-    url("Images/fondo11.jpg");
+    url("../Images/fondo11.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -308,7 +326,7 @@ html{
 /*.separador .separador-seccion {
     height: 100px;
     width: 100vw; // vw = viewport width, es decir, todo el ancho de la pantalla
-    background-image: url('../Images/fondo9.jpg'); // Reemplaza "ruta-de-la-imagen.jpg" con la ubicación de la imagen que quieres usar
+    background-image: url('../../Images/fondo9.jpg'); // Reemplaza "ruta-de-la-imagen.jpg" con la ubicación de la imagen que quieres usar
     background-size: cover; // ajusta la imagen para cubrir todo el tamaño del contenedor
     background-position: center; // posiciona la imagen en el centro del contenedor
 }*/
@@ -324,16 +342,17 @@ html{
     padding: 80px 0 100px 0;
     text-align: center;
     background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
-    url("Images/fondo9.jpg");
+    url("../Images/fondo9.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
     color: #fff;
 }
-.proyectos .proyectos-seccion h3{
+/*.proyectos .proyectos-seccion h3{
     text-transform: uppercase;
     font-size: 30px;
-}
+    padding: 10px 0 150px 0;
+}*/
 
 .proyectos .proyectos-seccion .contenedor-app {
     margin: 0;
@@ -350,7 +369,7 @@ html{
 
 .proyectos .proyectos-seccion .contenedor-app .left-column {
     width: 50%;
-    padding: 250px;
+    padding: 150px;
     box-sizing: border-box;
     text-align: center;
     display: flex;
@@ -408,10 +427,9 @@ html{
 
 
 
-
 .proyectos .proyectos-seccion .contenedor{
     width: 90%; /* Establece el ancho en 90% */
-    margin: 70px auto; /* Establece un margen superior e inferior de 70px y margen lateral automático */
+    margin: 100px auto; /* Establece un margen superior e inferior de 70px y margen lateral automático */
     height: 460px; /* Establece la altura en 460px */
     display: flex; /* Establece el contenedor como un elemento flexible */
     align-items: center; /* Establece la alineación vertical de los elementos secundarios en el centro */
@@ -445,7 +463,8 @@ html{
 .proyectos .proyectos-seccion .contenedor .item:hover img {
     opacity: 1; /* aumenta la opacidad de la imagen al 100% */
     /*transform: scale(1.2);  aumenta el tamaño de la imagen en un 20% */
-    object-fit: contain; /* establece el tipo de ajuste del contenido de la imagen dentro del contenedor */
+    transform: scale(0.8);
+    object-fit:contain; /* establece el tipo de ajuste del contenido de la imagen dentro del contenedor */
 }
 
 
@@ -457,7 +476,7 @@ html{
 /* SECCION CONTACTO */
 .contacto{
     background-color: #202020;
-    padding: 140px 0 100px 0;
+    padding: 60px 0 80px 0;
     color: #e6e6e6;
     text-align: center;
 }

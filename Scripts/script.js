@@ -22,10 +22,6 @@ for(var x = 0; x <links.length;x++){
 
 
 
-
-
-
-
 // Descarga del documento
 const downloadCVBtn = document.querySelector('.btn_downloadCV');
 
