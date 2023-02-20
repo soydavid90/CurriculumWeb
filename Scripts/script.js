@@ -25,12 +25,11 @@ for(var x = 0; x <links.length;x++){
 
 
 
-
 // Descarga del documento
 const downloadCVBtn = document.querySelector('.btn_downloadCV');
 
 downloadCVBtn.addEventListener('click', () => {
-    const url = 'Documents/Curiculum_Vitae.pdf';
+    const url = '../../Documents/Curiculum_Vitae.pdf';
     const link = document.createElement('a');
     link.href = url;
     link.target = '_blank';

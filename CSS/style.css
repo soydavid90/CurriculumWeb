@@ -446,8 +446,8 @@ html{
     opacity: 1; /* aumenta la opacidad de la imagen al 100% */
     /*transform: scale(1.2);  aumenta el tamaño de la imagen en un 20% */
     object-fit: contain; /* establece el tipo de ajuste del contenido de la imagen dentro del contenedor */
-}
 
+}
 
 
 
