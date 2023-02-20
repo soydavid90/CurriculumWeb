@@ -1,0 +1,532 @@
+/* importamos las fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&family=Yellowtail&display=swap');
+*{
+    font-family: "Titillium Web";
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+    /* --color-principal: #940253;
+    --color-principal: #02bfd8; */
+    --color-principal: #0098ac; 
+}
+
+/* SECCION INICIO */
+.inicio{
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+    url("../Images/fondo13.jpg");
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+}
+.inicio .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 0 10px;
+}
+.inicio .contenido-seccion header{
+    padding: 30px;
+}
+/* menu lateral */
+.inicio .contenido-seccion header nav{
+    position: fixed;
+    margin-left: 60px;
+    background-color: var(--color-principal);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    z-index: 99;
+    display: none;
+}
+.inicio .contenido-seccion header nav a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+/* ****** */
+.inicio .contenido-seccion header .logo{
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-family: "Yellowtail";
+    text-shadow: 0 0 35px #fff;
+}
+.inicio .contenido-seccion header .logo .color{
+    color: var(--color-principal);
+    font-family: "Yellowtail";
+}
+.inicio .contenido-seccion header .nav-bar{
+    position: fixed;
+    background-color: var(--color-principal);
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    cursor: pointer;
+    transition: .3s;
+}
+.inicio .contenido-seccion header .nav-bar:hover{
+    box-shadow: 0 0 35px #fff;
+}
+.inicio .contenido-seccion .info{
+    padding-bottom: 130px;
+}
+.inicio .contenido-seccion .info h1{
+    font-size: 3rem;
+    letter-spacing: 5px;
+}
+.inicio .contenido-seccion .info h2{
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: -10px;
+    letter-spacing: 2px;
+}
+.inicio .contenido-seccion .info .redes{
+    margin: 20px 0;
+}
+.inicio .contenido-seccion .info .redes a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #000;
+    color: var(--color-principal);
+    border: 1px solid var(--color-principal);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 5px;
+    transition: .3s;
+}
+.inicio .contenido-seccion .info .redes a:hover{
+    color: #fff;
+    background-color: var(--color-principal);
+    box-shadow: 0 0 20px #fff;
+}
+.inicio .contenido-seccion .foto{
+    position: relative;
+}
+.inicio .contenido-seccion .foto img{
+    max-width: 200px;
+    border-radius: 50%;
+    border: 5px solid var(--color-principal);
+    position: absolute;
+    left: 50%;
+    top: -100px;
+    transform: translateX(-50%);
+}
+/* estilos generales */
+.titulo-seccion{
+    font-family: "Yellowtail";
+    font-size: 1.5rem;
+}
+/* SECCION SOBRE MI */
+.sobremi{
+    background-color: #e6e6e6;
+    padding: 140px 0 100px 0;
+    text-align: center;
+}
+.sobremi .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.sobremi .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.sobremi .contenido-seccion .especial{
+    color: var(--color-principal);
+    font-weight: bold;
+    margin-top: 15px;
+}
+.sobremi .contenido-seccion p{
+    max-width: 700px;
+    margin: auto;
+    color: #666;
+}
+.sobremi .contenido-seccion .fila{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.sobremi .contenido-seccion .fila .col{
+    width: 30%;
+}
+.sobremi .contenido-seccion .fila .col i{
+    color: var(--color-principal);
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--color-principal);
+    line-height: 40px;
+    border-radius: 50%;
+}
+.sobremi .contenido-seccion .fila .col span{
+    display: block;
+    font-weight: bold;
+    margin: 8px 0;
+}
+/* SECCION HABILIDADES */
+.habilidades{
+    padding: 80px 0 100px 0;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+    url("../Images/fondo11.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    color: #fff;
+}
+.habilidades .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.habilidades .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.habilidades .contenido-seccion .fila{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.habilidades .contenido-seccion .fila .col{
+    width: 47%;
+    text-align: left;
+}
+.habilidades .contenido-seccion .fila .col .cont-barra{
+    display: flex;
+    align-items: center;
+}
+.habilidades .contenido-seccion .barra{
+    display: flex;
+    border: 1px solid var(--color-principal);
+    padding: 2px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+.habilidades .contenido-seccion .barra .e{
+    background-color: #363636;
+    width: 20px;
+    height: 30px;
+    margin-right: 2px;
+}
+/* SECCION RESUMEN */
+.resumen{
+    background-color: #e6e6e6;
+    padding: 140px 0 100px 0;
+    text-align: center;
+}
+.resumen .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.resumen .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.resumen .contenido-seccion .info{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+
+
+.resumen .contenido-seccion h1 .btn_downloadCV button{
+    font-weight: 700; /*Establece el grosor de la fuente en 700*/
+    color: #eceff1; /*Establece el color del texto en #1b3039*/
+    padding: 9px 25px; /*Establece el espacio de relleno superior e inferior en 9px y el espacio de relleno izquierdo y derecho en 25px*/
+    background: var(--color-principal); /*Establece el color de fondo en #eceff1*/
+    border: none; /*Elimina el borde*/
+    border-radius: 50px; /*Establece el radio de las esquinas en 50px*/
+    cursor: pointer; /*Establece el cursor del mouse en "pointer"*/
+    transition: all 0.3s ease 0s; /*Establece la transición de todas las propiedades de estilo durante 0.3 segundos*/
+    /* "ease" se utiliza para definir el estilo de la transición y "0.3s" se utiliza para definir la velocidad de la transición.
+    "0s" se utiliza para establecer un retraso de inicio de cero segundos para la transición. */
+}
+.resumen .contenido-seccion h1 .btn_downloadCV button:hover{
+    background-color: #8d8d8d; /*Establece el color de fondo en #e2f1f8 cuando el botón está en estado "hover"*/
+    color: #ffbc0e; /*Establece el color del texto en #ffbc0e cuando el botón está en estado "hover"*/
+    transform: scale(1.1); /*Establece la escala del elemento en 1.1 cuando el botón está en estado "hover"*/
+}
+
+
+
+.resumen .contenido-seccion .info .col{
+    width: 45%;
+}
+.resumen .contenido-seccion .info .col .titulo{
+    display: inline-block;
+    color: var(--color-principal);
+    font-weight: bold;
+    border: 2px solid var(--color-principal);
+    padding: 10px;
+
+}
+.resumen .contenido-seccion .info .col table{
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+.resumen .contenido-seccion .info .col table .datos{
+    width: 40%;
+    border-bottom: 1px solid #bab9b9;
+}
+.resumen .contenido-seccion .info .col table h4{
+    margin-top: 10px;
+}
+.resumen .contenido-seccion .info .col table h3{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.resumen .contenido-seccion .info .col table p{
+    font-size: 14px;
+}
+.resumen .contenido-seccion .info .col table .promedio{
+    display: block;
+    color: var(--color-principal);
+    margin-top: 10px;
+    font-weight: bold;
+}
+.resumen .contenido-seccion .info .col table .descripcion{
+    border-left: 1px solid #bab9b9;
+    padding-left: 20px;
+}
+
+
+
+
+
+  
+/*.separador .separador-seccion {
+    height: 100px;
+    width: 100vw; // vw = viewport width, es decir, todo el ancho de la pantalla
+    background-image: url('../Images/fondo9.jpg'); // Reemplaza "ruta-de-la-imagen.jpg" con la ubicación de la imagen que quieres usar
+    background-size: cover; // ajusta la imagen para cubrir todo el tamaño del contenedor
+    background-position: center; // posiciona la imagen en el centro del contenedor
+}*/
+
+
+
+
+
+
+
+/* SECCION PROYECTOS */
+.proyectos{
+    padding: 80px 0 100px 0;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+    url("../Images/fondo9.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    color: #fff;
+}
+.proyectos .proyectos-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.proyectos .proyectos-seccion .contenedor-app {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.proyectos .proyectos-seccion .contenedor-app .left-column {
+    width: 50%;
+    padding: 250px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proyectos .proyectos-seccion .contenedor-app .right-column {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.proyectos .proyectos-seccion .contenedor-app h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.proyectos .proyectos-seccion .contenedor-app p {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.proyectos .proyectos-seccion .contenedor-app .button {
+    padding: 3px 6px; /* reducir el tamaño del padding */
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* reducir la altura del botón */
+    overflow: hidden;
+}
+
+.proyectos .proyectos-seccion .contenedor-app .button img {
+    height: 100%; /* asegurarse de que la imagen ocupa toda la altura del botón */
+    width: auto; /* ajustar la anchura de la imagen automáticamente */
+    border-radius: 10px; /* reducir el radio de la esquina */
+}
+
+.proyectos .proyectos-seccion .contenedor-app .right-column img {
+    height: 342px;
+    width: 730px;
+    object-fit: cover;
+}
+
+.proyectos .proyectos-seccion .contenedor-app .left-column .descripcion-desarrollo{
+    font-family:'Courier New', Courier, monospace;
+    font-size: medium;
+}
+
+
+
+
+
+.proyectos .proyectos-seccion .contenedor{
+    width: 90%; /* Establece el ancho en 90% */
+    margin: 70px auto; /* Establece un margen superior e inferior de 70px y margen lateral automático */
+    height: 460px; /* Establece la altura en 460px */
+    display: flex; /* Establece el contenedor como un elemento flexible */
+    align-items: center; /* Establece la alineación vertical de los elementos secundarios en el centro */
+    cursor: pointer; /* Establece el cursor en forma de mano cuando se pasa por encima */
+}
+.proyectos .proyectos-seccion .contenedor:hover{
+    box-sizing:content-box; /* Cambia el modelo de caja para la sección de contenedor en la clase de proyectos cuando se coloca el cursor encima */
+}
+.proyectos .proyectos-seccion .contenedor .item{
+    height: 400px; /* Establece la altura en 400px */
+    width: 25%; /* Establece el ancho en 25% */
+    border: 4px solid #fff;  /* Establece un borde sólido blanco de 4px */
+    box-sizing: border-box; /* Establece el modelo de caja como "border-box" para incluir el ancho del borde en el ancho del elemento */
+    overflow: hidden; /* Oculta cualquier contenido adicional que se extienda más allá del borde */
+    display: flex; /* Establece el contenedor como un elemento flexible */
+    justify-content: center; /* Establece la alineación horizontal de los elementos secundarios en el centro */
+    transition: 1s; /* Establece una transición de 1 segundo para cualquier cambio en los estilos de los elementos secundarios */
+}
+.proyectos .proyectos-seccion .contenedor .item img{
+    transition: 1s; /* Establece una transición de 1 segundo para cualquier cambio en los estilos de la imagen */
+    height: 100%; /* Establece la altura en 100% */
+    opacity: 0.6; /* Establece la opacidad en 0.2 */
+}
+.proyectos .proyectos-seccion .contenedor .item:hover {
+  width: 50%; /* Establece el ancho en 50% cuando se coloca el cursor encima */
+  height: 100%; /* Establece la altura en 100% cuando se coloca el cursor encima */
+  position: relative; /* Establece la posición como relativa para permitir cambios en la posición de los elementos secundarios */
+  z-index: 1; /* Establece el índice de apilamiento en 1 para que el elemento secundario aparezca encima de otros elementos */
+}
+
+.proyectos .proyectos-seccion .contenedor .item:hover img {
+    opacity: 1; /* aumenta la opacidad de la imagen al 100% */
+    /*transform: scale(1.2);  aumenta el tamaño de la imagen en un 20% */
+    object-fit: contain; /* establece el tipo de ajuste del contenido de la imagen dentro del contenedor */
+}
+
+
+
+
+
+
+
+/* SECCION CONTACTO */
+.contacto{
+    background-color: #202020;
+    padding: 140px 0 100px 0;
+    color: #e6e6e6;
+    text-align: center;
+}
+.contacto .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.contacto .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.contacto .contenido-seccion .fila{
+    display: flex;
+    justify-content: space-around;
+}
+.contacto .contenido-seccion .fila .col{
+    margin-top: 50px;
+}
+.contacto .contenido-seccion .fila .col h2{
+    color: var(--color-principal);
+}
+
+
+.contacto .contenido-seccion .fila .col .info-contacto .urlLinkedin{
+    color: #e6e6e6;
+}
+.contacto .contenido-seccion .fila .col .info-contacto .urlLinkedin:visited{
+    color: #e6e6e6;
+}
+
+
+
+/* SECCION RESPONSIVE */
+@media screen and (max-width:800px){
+    .habilidades .contenido-seccion .fila{
+        display: block;
+    }
+    .habilidades .contenido-seccion .fila .col{
+        width: 100%;
+        text-align: center;
+    }
+    .habilidades .contenido-seccion .fila .col .cont-barra{
+        justify-content: center;
+    }
+    .sobremi .contenido-seccion .fila{
+        display: block;
+    }
+    .sobremi .contenido-seccion .fila .col{
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .resumen .contenido-seccion .info{
+        display: block;
+    }
+    .resumen .contenido-seccion .info .col{
+        width: 90%;
+        margin: auto;
+    }
+    .resumen .contenido-seccion .info .col .titulo{
+        display: block;
+        text-align: center;
+    }
+    .resumen .contenido-seccion .info .col table{
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .contacto .contenido-seccion .fila{
+        display: block;
+    }
+}
