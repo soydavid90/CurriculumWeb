@@ -353,6 +353,11 @@ html{
     font-size: 30px;
     padding: 10px 0 150px 0;
 }*/
+.proyectos .proyectos-seccion{
+    max-width: 2000px;
+    margin: auto;
+    padding: 0 10px;
+}
 
 .proyectos .proyectos-seccion .contenedor-app {
     margin: 0;
