@@ -399,7 +399,7 @@ html{
     margin: 0;
 }
 
-.proyectos .proyectos-seccion .contenedor-app .button {
+.proyectos .proyectos-seccion .contenedor-app .button a {
     padding: 3px 6px; /* reducir el tamaño del padding */
     border: none;
     margin-top: 20px;
@@ -412,7 +412,7 @@ html{
     overflow: hidden;
 }
 
-.proyectos .proyectos-seccion .contenedor-app .button img {
+.proyectos .proyectos-seccion .contenedor-app .button a img {
     height: 100%; /* asegurarse de que la imagen ocupa toda la altura del botón */
     width: auto; /* ajustar la anchura de la imagen automáticamente */
     border-radius: 10px; /* reducir el radio de la esquina */
