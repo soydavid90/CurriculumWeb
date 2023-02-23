@@ -612,9 +612,9 @@ html{
         display: block;
     }
     .proyectos .contenido-seccion .fila .col{
-        width: 80%;
+        width: 90%;
         margin: auto;
-        margin-top: 20px;
+        text-align: center;
     }
     /*.proyectos .contenido-seccion .fila .col .cont-barra{
         justify-content: center;
