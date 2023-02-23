@@ -72,6 +72,40 @@ html{
 .inicio .contenido-seccion header .nav-bar:hover{
     box-shadow: 0 0 35px #fff;
 }
+
+
+.inicio .contenido-seccion .nav a .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+}
+
+.inicio .contenido-seccion .nav a .sub-menu li {
+    display: block;
+    width: 100%;
+}
+
+.inicio .contenido-seccion .nav a .sub-menu a {
+    display: block;
+    padding: 10px;
+    background-color: #f9f9f9;
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.inicio .contenido-seccion .nav a .sub-menu a:hover {
+    background-color: #e5e5e5;
+}
+
+
+
+
+
+
 .inicio .contenido-seccion .info{
     padding-bottom: 130px;
 }
@@ -128,15 +162,11 @@ html{
     font-size: 30px;
     padding: 10px 0 10px 0;
 }
-.titulo-seccion-h1libre{
+.titulo-seccion-h1libre,
+.titulo-seccion-h3libre{
     text-transform: uppercase;
     font-size: 20px;
     padding: 10px 0 60px 0;
-}
-.titulo-seccion-h3libre{
-    text-transform: uppercase;
-    font-size: 30px;
-    padding: 10px 0 120px 0;
 }
 
 
@@ -339,7 +369,7 @@ html{
 
 /* SECCION PROYECTOS */
 .proyectos{
-    padding: 80px 0 100px 0;
+    padding: 140px 0 100px 0;
     text-align: center;
     background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
     url("../Images/fondo9.jpg");
@@ -348,58 +378,32 @@ html{
     background-position: center center;
     color: #fff;
 }
-/*.proyectos .proyectos-seccion h3{
-    text-transform: uppercase;
-    font-size: 30px;
-    padding: 10px 0 150px 0;
-}*/
-.proyectos .proyectos-seccion{
-    max-width: 2000px;
+
+.proyectos .contenido-seccion{
+    max-width: 1000px;
     margin: auto;
     padding: 0 10px;
 }
-
-.proyectos .proyectos-seccion .contenedor-app {
-    margin: 0;
-    padding: 0;
+.proyectos .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.proyectos .contenido-seccion .fila{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 40vh;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
-
-.proyectos .proyectos-seccion .contenedor-app .left-column {
-    width: 50%;
-    padding: 150px;
-    box-sizing: border-box;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.proyectos .contenido-seccion .fila .col{
+    /*margin-top: 50px;*/
+    margin: 0 125px;
 }
-
-.proyectos .proyectos-seccion .contenedor-app .right-column {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.proyectos .contenido-seccion .fila .col .info-app{
+    width: 500px;
 }
-
-.proyectos .proyectos-seccion .contenedor-app h1 {
-    font-size: 2em;
-    margin: 0;
+.proyectos .contenido-seccion .fila .col .info-app .descripcion-desarrollo{
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
 }
-
-.proyectos .proyectos-seccion .contenedor-app p {
-    font-size: 1.5em;
-    margin: 0;
-}
-
-.proyectos .proyectos-seccion .contenedor-app .button a {
+.proyectos .contenido-seccion .fila .col .boton-descargar-googleplay a {
     padding: 3px 6px; /* reducir el tamaño del padding */
     border: none;
     margin-top: 20px;
@@ -408,69 +412,120 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px; /* reducir la altura del botón */
+    height: 80px; /* reducir la altura del botón */
     overflow: hidden;
 }
-
-.proyectos .proyectos-seccion .contenedor-app .button a img {
+.proyectos .contenido-seccion .fila .col .boton-descargar-googleplay a img {
     height: 100%; /* asegurarse de que la imagen ocupa toda la altura del botón */
     width: auto; /* ajustar la anchura de la imagen automáticamente */
     border-radius: 10px; /* reducir el radio de la esquina */
 }
 
-.proyectos .proyectos-seccion .contenedor-app .right-column img {
-    height: 342px;
-    width: 730px;
+
+
+
+
+.proyectos .contenido-seccion .fila .imagenes-app{
+    display: flex;
+    width: 100vh;
+    height: 60vh;
+    max-height: 900px;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    border-color: #eceff1;
+}
+
+.proyectos .contenido-seccion .fila .imagenes-app .box{
+    flex: 1;
+    overflow: hidden;
+    margin: 8px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.20);
+    line-height: 0;
+    transition: all 600ms;
+    opacity: 0.5; /* Agregamos opacidad inicial del 80% */
+}
+.proyectos .contenido-seccion .fila .imagenes-app .box > img{
+    width: 100%;
+    height: calc(100% - 10vh);
     object-fit: cover;
-}
+    transition: all 300ms;
 
-.proyectos .proyectos-seccion .contenedor-app .left-column .descripcion-desarrollo{
-    font-family:'Courier New', Courier, monospace;
-    font-size: medium;
-}
-
-
-
-
-.proyectos .proyectos-seccion .contenedor{
-    width: 90%; /* Establece el ancho en 90% */
-    margin: 100px auto; /* Establece un margen superior e inferior de 70px y margen lateral automático */
-    height: 460px; /* Establece la altura en 460px */
-    display: flex; /* Establece el contenedor como un elemento flexible */
-    align-items: center; /* Establece la alineación vertical de los elementos secundarios en el centro */
-    cursor: pointer; /* Establece el cursor en forma de mano cuando se pasa por encima */
-}
-.proyectos .proyectos-seccion .contenedor:hover{
-    box-sizing:content-box; /* Cambia el modelo de caja para la sección de contenedor en la clase de proyectos cuando se coloca el cursor encima */
-}
-.proyectos .proyectos-seccion .contenedor .item{
-    height: 400px; /* Establece la altura en 400px */
-    width: 25%; /* Establece el ancho en 25% */
     border: 4px solid #fff;  /* Establece un borde sólido blanco de 4px */
     box-sizing: border-box; /* Establece el modelo de caja como "border-box" para incluir el ancho del borde en el ancho del elemento */
     overflow: hidden; /* Oculta cualquier contenido adicional que se extienda más allá del borde */
-    display: flex; /* Establece el contenedor como un elemento flexible */
-    justify-content: center; /* Establece la alineación horizontal de los elementos secundarios en el centro */
-    transition: 1s; /* Establece una transición de 1 segundo para cualquier cambio en los estilos de los elementos secundarios */
-}
-.proyectos .proyectos-seccion .contenedor .item img{
-    transition: 1s; /* Establece una transición de 1 segundo para cualquier cambio en los estilos de la imagen */
-    height: 100%; /* Establece la altura en 100% */
-    opacity: 0.6; /* Establece la opacidad en 0.2 */
-}
-.proyectos .proyectos-seccion .contenedor .item:hover {
-  width: 50%; /* Establece el ancho en 50% cuando se coloca el cursor encima */
-  height: 100%; /* Establece la altura en 100% cuando se coloca el cursor encima */
-  position: relative; /* Establece la posición como relativa para permitir cambios en la posición de los elementos secundarios */
-  z-index: 1; /* Establece el índice de apilamiento en 1 para que el elemento secundario aparezca encima de otros elementos */
 }
 
-.proyectos .proyectos-seccion .contenedor .item:hover img {
-    opacity: 1; /* aumenta la opacidad de la imagen al 100% */
-    /*transform: scale(1.2);  aumenta el tamaño de la imagen en un 20% */
-    transform: scale(0.8);
-    object-fit:contain; /* establece el tipo de ajuste del contenido de la imagen dentro del contenedor */
+.proyectos .contenido-seccion .fila .imagenes-app .box:hover{
+    flex: 80%;
+    transform: scale(1.05) translateY(-10px);
+    opacity: 1; /* Aumentamos la opacidad al 100% al hacer hover */
 }
+
+.proyectos .contenido-seccion .fila .imagenes-app .box:hover > img{
+    width: 100%;
+    height: 100%;
+}
+
+.proyectos .contenido-seccion .popup-imagen{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+.proyectos .contenido-seccion .popup-imagen span{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+.proyectos .contenido-seccion .popup-imagen img{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    border-radius: 5px;
+    width: 750px;
+    object-fit: cover;
+}
+.proyectos .contenido-seccion .fila:nth-child(2){
+    margin-top: 400px;
+}
+
+.separador {
+    display: block;
+    width: 100%;
+    height: 2px; /* altura de la línea */
+    margin: 10vh 0; /* margen vertical adaptable */
+    background-color: var(--color-principal);
+    opacity: 0.6;
+  }
+
+@media (max-width:768px){
+    .container .popup-imagen img{
+        width: 95%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -550,6 +605,23 @@ html{
         margin-top: 10px;
         margin-bottom: 30px;
     }
+
+
+
+    .proyectos .contenido-seccion .fila{
+        display: block;
+    }
+    .proyectos .contenido-seccion .fila .col{
+        width: 100%;
+        text-align: center;
+    }
+    /*.proyectos .contenido-seccion .fila .col .cont-barra{
+        justify-content: center;
+    }*/
+    
+
+
+
     .contacto .contenido-seccion .fila{
         display: block;
     }

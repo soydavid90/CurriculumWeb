@@ -38,6 +38,7 @@
 					<!-- https://fontawesome.com/icons/ -->
                     <a href="https://play.google.com/store/apps/details?id=com.aloydeveloper.cognobrain" target="_blank"><i class="fa-brands fa-google-play"></i></a>
 					<a href="https://www.linkedin.com/in/david-fabi%C3%A1n-alc%C3%B3n-90452b252/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a id="correo-electronico" title="david90@usal.es"><i class="fa-solid fa-envelope"></i></a>
                 </div>
             </div>
             <div class="foto">
@@ -375,68 +376,99 @@
 
     <!-- SECCION PROYECTOS PROPIOS DESARROLLADOS -->
     <section class="proyectos" id="proyectos">
-        <div class="proyectos-seccion">
+        <div class="contenido-seccion">
             <h2 class="titulo-seccion">Proyectos</h2>
             <h3 class="titulo-seccion-h3libre"> Propios Desarrollados</h3>
-
-            <div class="contenedor-app">
-                <div class="left-column">
-                    <h1>Cognobrain</h1>
-                    <p>El objetivo de la aplicación es lograr mejorar las capacidades cognitivas del usuario mediante el uso de varios juegos.</p>
-                    <p>Es lo suficientemente intuitiva y clara para que el usuario objetivo sea capaz de utilizarla sin conocimiento adicional.</p>
-                    <p>Los juegos integrantes del sistema se centran en la memoria, el capacidad de cálculo y la capacidad resolutiva.</p>
-                    <p class="descripcion-desarrollo"><br>[App para Android, desarrollada en IDE <b>Android Studio</b> con el lenguaje <b>Kotlin</b>]</p>
-                    <div class="button">
-                        <a href="https://play.google.com/store/apps/details?id=com.aloydeveloper.cognobrain" target="_blank">
+            
+            <div class="fila">
+                <div class="col">
+                    <div class="info-app">
+                        <h1>Cognobrain</h1>
+                        <p>El objetivo de la aplicación es lograr mejorar las capacidades cognitivas del usuario mediante el uso de varios juegos.</p>
+                        <p>Es lo suficientemente intuitiva y clara para que el usuario objetivo sea capaz de utilizarla sin conocimiento adicional.</p>
+                        <p>Los juegos integrantes del sistema se centran en la memoria, el capacidad de cálculo y la capacidad resolutiva.</p>
+                        <p class="descripcion-desarrollo"><br>[App para Android, desarrollada en IDE <b>Android Studio</b> con el lenguaje <b>Kotlin</b>]</p>
+                    </div>
+                    <div class="boton-descargar-googleplay" onclick="playSound()">
+                        <a href="https://play.google.com/store/apps/details?id=com.aloydeveloper.cognobrain" target="_blank" onclick="playSound()">
                           <img src="Images/GooglePlayDownloadLogo.png" alt="Descargar en Google Play">
                         </a>
                     </div>
                 </div>
-                <div class="right-column">
-                    <img src="Images/CognobrainSmartphone.png" alt="imagen">
+                <div class="col">
+                    <div class="imagen-smartphone">
+                        <img src="Images/CognobrainSmartphone.png" alt="imagen">
+                    </div>
                 </div>
             </div>
-            <div class="contenedor">
-                <div class="item img1">
-                    <img src="Images/Cognobrain1.jpg" alt="">
-                </div>
-                <div class="item img2">
-                    <img src="Images/Cognobrain2.jpg" alt="">
-                </div>
-                <div class="item img3">
-                    <img src="Images/Cognobrain3.jpg" alt="">
-                </div>
-                <div class="item img4">
-                    <img src="Images/Cognobrain4.jpg" alt="">
+            <div class="fila">
+                <div class="imagenes-app">
+                    <div class="box">
+                        <img class="imagen-app" src="Images/Cognobrain1.jpg" alt="" onclick="playSound()">
+                    </div>
+                    <div class="box">
+                        <img class="imagen-app" src="Images/Cognobrain2.jpg" alt="">
+                    </div>
+                    <div class="box">
+                        <img class="imagen-app" src="Images/Cognobrain3.jpg" alt="">
+                    </div>
+                    <div class="box">
+                        <img class="imagen-app" src="Images/Cognobrain4.jpg" alt="">
+                    </div>
                 </div>
             </div>
-            
+            <div class="popup-imagen">
+                <span>&times;</span>
+                <img src="Images/Cognobrain1.jpg" alt="">
+            </div>
+            <div class="fondo-popup"></div>
+            <div class="separador"></div>
 
-            <div class="contenedor-app">
-                <div class="left-column">
-                    <h1>Youtube Downloader MP4/MP3 (en construcción)</h1>
-                    <p>Permite descargar de Youtube el vídeo+audio o solo el audio.</p>
-                    <p>Se podrá pegar tanto el link a un vídeo como a una playlist.</p>
-                    <p class="descripcion-desarrollo"><br>[Aplicación de escritorio para Windows, desarrollada en IDE <b>Eclipse</b> con el lenguaje <b>JAVA</b>]</p>
+
+
+            <div class="fila">
+                <div class="col">
+                    <div class="info-app">
+                        <h1>Youtube Downloader Free MP4/MP3 (en construcción)</h1>
+                        <p>Se podrá pegar tanto la url de un vídeo como de una playlist.</p>
+                        <p>Se escogerá entre descargar vídeo/audio o solo audio.</p>
+                        <p>Será gratis y sin anuncios.</p>
+                        <p class="descripcion-desarrollo"><br>[Aplicación de escritorio para <b>Windows</b>, desarrollada en IDE <b>Eclipse e IntelliJ IDEA</b> con el lenguaje <b>Java</b>]</p>
+                    </div>
+                    <div class="boton-descargar-googleplay">
+                        <a href="" target="_blank">
+                          <img src="Images/descargar.png" alt="Descargar aplicación">
+                        </a>
+                    </div>
                 </div>
-                <div class="right-column">
-                    <img src="Images/maintenance.jpg" alt="imagen">
-                </div>
-            </div>
-            <div class="contenedor">
-                <div class="item">
-                    <img src="https://via.placeholder.com/600x400?text=Imagen%201" alt="">
-                </div>
-                <div class="item">
-                    <img src="https://via.placeholder.com/600x400?text=Imagen%202" alt="">
-                </div>
-                <div class="item">
-                    <img src="https://via.placeholder.com/600x400?text=Imagen%203" alt="">
-                </div>
-                <div class="item">
-                    <img src="https://via.placeholder.com/600x400?text=Imagen%204" alt="">
+                <div class="col">
+                    <div class="imagen-smartphone">
+                        <img src="Images/en_construccion.jpg" alt="imagen">
+                    </div>
                 </div>
             </div>
+            <div class="fila">
+                <div class="imagenes-app">
+                    <div class="box">
+                        <img class="imagen-app" src="https://via.placeholder.com/600x400?text=Imagen%201" alt="">
+                    </div>
+                    <div class="box">
+                        <img class="imagen-app" src="https://via.placeholder.com/600x400?text=Imagen%202" alt="">
+                    </div>
+                    <div class="box">
+                        <img class="imagen-app" src="https://via.placeholder.com/600x400?text=Imagen%203" alt="">
+                    </div>
+                    <div class="box">
+                        <img class="imagen-app" src="https://via.placeholder.com/600x400?text=Imagen%204" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="popup-imagen">
+                <span>&times;</span>
+                <img src="Images/Cognobrain1.jpg" alt="">
+            </div>
+            <div class="fondo-popup"></div>
+
         </div>
     </section>
 
@@ -472,6 +504,7 @@
     </section>
 
     <script src="Scripts/script.js"></script>
+
 
 </body>
 </html>

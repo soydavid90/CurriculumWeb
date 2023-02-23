@@ -21,6 +21,20 @@ for(var x = 0; x <links.length;x++){
 }
 
 
+//al pulsar sobre el icono del correo, este se copia al portapapeles
+const correo = document.getElementById('correo-electronico');
+correo.addEventListener('click', () => {
+  const correoTexto = correo.title;
+  navigator.clipboard.writeText(correoTexto)
+    .then(() => {
+      alert(`Se ha copiado \"${correoTexto}\" al portapapeles`);
+    })
+    .catch((err) => {
+      console.error('Error al copiar al portapapeles: ', err);
+    });
+});
+
+
 
 // Descarga del documento
 const downloadCVBtn = document.querySelector('.btn_downloadCV');
@@ -149,6 +163,43 @@ function pintarBarra(id_barra, cantidad, indice, interval){
         clearInterval(interval)
     }
 }
+
+
+/* Este código selecciona todas las imágenes dentro de los contenedores de clase "box" dentro de "imagenes-app".
+Luego, cuando se hace clic en una de estas imágenes, se muestra una ventana emergente con la imagen en tamaño completo.
+Además, se agrega un controlador de eventos de clic para cerrar la ventana emergente al hacer clic en cualquier lugar fuera de la imagen. */
+document.querySelectorAll('.imagenes-app .box img').forEach(imagen => {
+    imagen.onclick = () => {
+      const popupImagen = document.querySelector('.popup-imagen');
+      popupImagen.style.display = 'block';
+      popupImagen.querySelector('img').src = imagen.getAttribute('src');
+      // Agregar controlador de eventos de clic para cerrar la imagen al hacer clic fuera de ella
+      popupImagen.onclick = (event) => {
+        if (event.target === popupImagen) {
+          popupImagen.style.display = 'none';
+        }
+      };
+      // Agregar controlador de eventos para la tecla "Esc" para cerrar la imagen emergente
+      window.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+          popupImagen.style.display = 'none';
+        }
+      });
+    };
+  });
+  
+  // Seleccionar el botón "X" y agregar un controlador de eventos de clic
+  document.querySelectorAll('.popup-imagen span').forEach(span => {
+    span.onclick = () => {
+      document.querySelector('.popup-imagen').style.display = 'none';
+    };
+  });
+
+
+
+
+
+
 
 //detecto el scrolling del mouse para aplicar la animación de la barra
 window.onscroll = function(){
