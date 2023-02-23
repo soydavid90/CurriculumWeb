@@ -3,10 +3,12 @@ var menu_visible = false;
 let menu = document.getElementById("nav");
 function mostrarOcultarMenu(){
     if(menu_visible==false){//si esta oculto
+        playSonido_1();
         menu.style.display = "block";
         menu_visible = true;
     }
     else{
+        playSonido_2();
         menu.style.display = "none";
         menu_visible = false;
     }
@@ -40,6 +42,7 @@ correo.addEventListener('click', () => {
 const downloadCVBtn = document.querySelector('.btn_downloadCV');
 
 downloadCVBtn.addEventListener('click', () => {
+    playSonido_2();
     const url = 'Documents/Curiculum_Vitae.pdf';
     const link = document.createElement('a');
     link.href = url;
@@ -176,12 +179,14 @@ document.querySelectorAll('.imagenes-app .box img').forEach(imagen => {
       // Agregar controlador de eventos de clic para cerrar la imagen al hacer clic fuera de ella
       popupImagen.onclick = (event) => {
         if (event.target === popupImagen) {
+          playSonido_2();
           popupImagen.style.display = 'none';
         }
       };
       // Agregar controlador de eventos para la tecla "Esc" para cerrar la imagen emergente
       window.addEventListener('keydown', (event) => {
         if (event.key === 'Escape') {
+          playSonido_2();
           popupImagen.style.display = 'none';
         }
       });
@@ -191,10 +196,23 @@ document.querySelectorAll('.imagenes-app .box img').forEach(imagen => {
   // Seleccionar el botón "X" y agregar un controlador de eventos de clic
   document.querySelectorAll('.popup-imagen span').forEach(span => {
     span.onclick = () => {
+        playSonido_2();
       document.querySelector('.popup-imagen').style.display = 'none';
     };
   });
 
+
+
+// Se produce un sonido al hacer click sobre una imagen de proyecto
+const sonido_1 = new Audio('Sounds/sonido_1.wav');
+function playSonido_1() {
+    sonido_1.play();
+}
+// Se produce un sonido al salir del popup de la imagen de proyecto ampliada
+const sonido_2 = new Audio('Sounds/sonido_2.wav');
+function playSonido_2() {
+    sonido_2.play();
+}
 
 
 
