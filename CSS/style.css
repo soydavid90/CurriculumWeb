@@ -403,7 +403,7 @@ html{
     font-size: 12px;
     font-family: 'Courier New', Courier, monospace;
 }
-.proyectos .contenido-seccion .fila .col .boton-descargar-googleplay a {
+.proyectos .contenido-seccion .fila .col .boton-descargar a {
     padding: 3px 6px; /* reducir el tamaño del padding */
     border: none;
     margin-top: 20px;
@@ -415,7 +415,7 @@ html{
     height: 80px; /* reducir la altura del botón */
     overflow: hidden;
 }
-.proyectos .contenido-seccion .fila .col .boton-descargar-googleplay a img {
+.proyectos .contenido-seccion .fila .col .boton-descargar a img {
     height: 100%; /* asegurarse de que la imagen ocupa toda la altura del botón */
     width: auto; /* ajustar la anchura de la imagen automáticamente */
     border-radius: 10px; /* reducir el radio de la esquina */
