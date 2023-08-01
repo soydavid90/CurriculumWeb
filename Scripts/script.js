@@ -47,7 +47,7 @@ downloadCVBtn.addEventListener('click', () => {
     const link = document.createElement('a');
     link.href = url;
     link.target = '_blank';
-    link.download = 'Curiculum_Vitae.pdf';
+    link.download = 'Curiculum_Vitaee.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
