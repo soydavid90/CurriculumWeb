@@ -43,11 +43,11 @@ const downloadCVBtn = document.querySelector('.btn_downloadCV');
 
 downloadCVBtn.addEventListener('click', () => {
     playSonido_2();
-    const url = 'Documents/.pdf';
+    const url = 'Documents/Curiculum_Vitae.pdf';
     const link = document.createElement('a');
     link.href = url;
     link.target = '_blank';
-    link.download = '.pdf';
+    link.download = 'Curiculum_Vitae.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
